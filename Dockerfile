@@ -1,1 +1,1 @@
-FROM rails
+FROM rails:latest
