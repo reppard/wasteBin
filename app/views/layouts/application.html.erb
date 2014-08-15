@@ -1,14 +1,38 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>WasteBin</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <title>WasteBin</title>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
 
-<%= yield %>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><b>WasteBin</b></a>
+        </div>
+      </div>
+    </div>
 
-</body>
+    <div id="headerwrap">
+      <div class="container">
+        <div class="row">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row mt centered">
+        <div class="col-lg-6 col-lg-offset-3">
+          <%= render 'waste_items/tag_cloud'  %>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

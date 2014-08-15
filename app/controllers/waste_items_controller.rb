@@ -5,6 +5,7 @@ class WasteItemsController < ApplicationController
   # GET /waste_items.json
   def index
     @waste_items = WasteItem.all
+    @waste_item = WasteItem.new
   end
 
   # GET /waste_items/1
@@ -28,7 +29,7 @@ class WasteItemsController < ApplicationController
 
     respond_to do |format|
       if @waste_item.save
-        format.html { redirect_to @waste_item, notice: 'Waste item was successfully created.' }
+        format.html { redirect_to waste_items_path, notice: 'Waste item was successfully created.' }
         format.json { render :show, status: :created, location: @waste_item }
       else
         format.html { render :new }
@@ -59,6 +60,10 @@ class WasteItemsController < ApplicationController
       format.html { redirect_to waste_items_url, notice: 'Waste item was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  def tag_cloud
+    @waste_items = WasteItem.all
   end
 
   private

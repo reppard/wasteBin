@@ -14,3 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require jqcloud
+$(function(){
+  var word_array = eval("["+ $('.cloud').data('cloud') +"]");
+
+  $('.cloud').jQCloud(word_array);
+});

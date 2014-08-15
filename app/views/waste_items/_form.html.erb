@@ -12,10 +12,9 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :content %><br>
     <%= f.text_field :content %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Trash It!", :class => "btn btn-warning btn-lg" %>
   </div>
 <% end %>
