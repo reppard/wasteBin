@@ -1,28 +1,9 @@
-== README
+== WasteBin
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A hacked up, scaffolded, bootstrapped, waste discovery and word cloud generating tool created for Innovation Day
 
-Things you may want to cover:
+Purpose:
 
-* Ruby version
+* Support Lean Principle #1 – Eliminate Waste
+* It does this by helping teams identify waste
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
