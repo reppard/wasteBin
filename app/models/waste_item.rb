@@ -8,7 +8,7 @@ class WasteItem < ActiveRecord::Base
 
     word_objects = ""
 
-    (1..100).step(3).to_a.reverse.each do |n|
+    (1..100).step(4).to_a.reverse.each do |n|
       word_objects << "{text:\"#{word_array.pop}\",weight:#{n}},"
     end
     word_objects
