@@ -7133,3 +7133,8 @@ td.visible-print {
     display: none !important;
   }
 }
+
+.cloud {
+  margin-left:auto;
+  margin-right:auto;
+}
